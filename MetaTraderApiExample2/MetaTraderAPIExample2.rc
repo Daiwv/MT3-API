@@ -1,0 +1,423 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MetaTraderAPIExample2.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MetaTraderAPIExample2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OPENACCOUNT DIALOG DISCARDABLE  0, 0, 270, 122
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Open an Account"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Register >>",IDOK,213,101,50,14
+    EDITTEXT        IDC_EDITNAME,42,6,221,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITCOUNTRY,42,20,89,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITCITY,42,33,89,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITSTATE,174,20,89,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITZIP,174,34,89,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITADDRESS,42,47,221,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITPHONE,42,60,89,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITEMAIL,174,60,89,12,ES_AUTOHSCROLL
+    RTEXT           "Name:",IDC_STATIC,7,8,32,10
+    RTEXT           "Address:",IDC_STATIC,7,49,31,10
+    RTEXT           "City:",IDC_STATIC,7,36,31,10
+    RTEXT           "Country:",IDC_STATIC,7,23,32,10
+    RTEXT           "Phone:",IDC_STATIC,7,62,31,10
+    RTEXT           "State:",IDC_STATIC,131,22,41,10
+    RTEXT           "Zip:",IDC_STATIC,131,35,40,10
+    RTEXT           "E-mail:",IDC_STATIC,131,62,40,10
+    COMBOBOX        IDC_COMBOLEVERAGE,42,74,89,90,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBODEPOSIT,174,73,89,90,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Leverage:",IDC_STATIC,7,76,31,10
+    RTEXT           "Deposit:",IDC_STATIC,131,76,40,10
+END
+
+IDD_ORDER_FORM DIALOGEX 0, 0, 361, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Order Form"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Ticket",IDC_STATIC,5,0,165,50,WS_TABSTOP
+    RTEXT           "Symbol:",IDC_STATIC,30,12,34,10,WS_TABSTOP
+    COMBOBOX        IDC_SYMBOLS,69,10,57,90,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "Lots:",IDC_STATIC,39,32,25,10,WS_TABSTOP
+    COMBOBOX        IDC_LOTS,69,30,35,206,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "Stop Loss:",IDC_STATIC,185,12,37,10
+    EDITTEXT        IDC_STOPLOSS,227,10,35,12,ES_AUTOHSCROLL
+    RTEXT           "Take Profit:",IDC_STATIC,268,12,38,10
+    EDITTEXT        IDC_TAKEPROFIT,311,10,35,12,ES_AUTOHSCROLL
+    GROUPBOX        "Market Order",IDC_MARKET,5,57,350,60,WS_TABSTOP
+    CTEXT           "Please Request",IDC_PRICES,10,67,195,25,SS_CENTERIMAGE | 
+                    SS_SUNKEN | WS_TABSTOP
+    PUSHBUTTON      "&Request",IDC_GET_PRICES,255,77,50,14,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "&Sell",IDC_SELL,210,77,40,14,WS_DISABLED,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "&Buy",IDC_BUY,310,77,40,14,WS_DISABLED,WS_EX_STATICEDGE
+    PUSHBUTTON      "",IDC_CLOSE_DEAL,10,97,175,14,WS_DISABLED,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "",IDC_CLOSE_BY,195,97,90,14,WS_DISABLED,
+                    WS_EX_STATICEDGE
+    COMBOBOX        IDC_CLOSE_DEALS,290,98,60,110,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Limit or Stop Order",IDC_STATIC,5,122,350,30,WS_TABSTOP
+    RTEXT           "Type:",IDC_STATIC,11,134,34,10,WS_TABSTOP
+    COMBOBOX        IDC_COMMAND,50,132,57,79,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "at price:",IDC_STATIC,109,134,27,10,WS_TABSTOP
+    EDITTEXT        IDC_IDLE_PRICE,140,132,35,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "S&end",IDC_SEND,195,131,55,14,0,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "&Close",IDCANCEL,140,157,50,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "",IDC_DELETE,255,131,95,14,WS_DISABLED,WS_EX_STATICEDGE
+    PUSHBUTTON      "",IDC_MODIFY,227,30,119,14,WS_DISABLED,WS_EX_STATICEDGE
+    GROUPBOX        "",IDC_STATIC,180,0,175,50
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_OPENACCOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_ORDER_FORM, DIALOG
+    BEGIN
+        RIGHTMARGIN, 360
+        BOTTOMMARGIN, 174
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_OPENACCOUNT DLGINIT
+BEGIN
+    IDC_COMBOLEVERAGE, 0x403, 4, 0
+0x3a31, 0x0031, 
+    IDC_COMBOLEVERAGE, 0x403, 5, 0
+0x3a31, 0x3031, "\000" 
+    IDC_COMBOLEVERAGE, 0x403, 5, 0
+0x3a31, 0x3532, "\000" 
+    IDC_COMBOLEVERAGE, 0x403, 5, 0
+0x3a31, 0x3333, "\000" 
+    IDC_COMBOLEVERAGE, 0x403, 5, 0
+0x3a31, 0x3035, "\000" 
+    IDC_COMBOLEVERAGE, 0x403, 6, 0
+0x3a31, 0x3031, 0x0030, 
+    IDC_COMBOLEVERAGE, 0x403, 6, 0
+0x3a31, 0x3032, 0x0030, 
+    IDC_COMBODEPOSIT, 0x403, 5, 0
+0x3033, 0x3030, "\000" 
+    IDC_COMBODEPOSIT, 0x403, 5, 0
+0x3035, 0x3030, "\000" 
+    IDC_COMBODEPOSIT, 0x403, 6, 0
+0x3031, 0x3030, 0x0030, 
+    IDC_COMBODEPOSIT, 0x403, 6, 0
+0x3532, 0x3030, 0x0030, 
+    IDC_COMBODEPOSIT, 0x403, 6, 0
+0x3035, 0x3030, 0x0030, 
+    IDC_COMBODEPOSIT, 0x403, 7, 0
+0x3031, 0x3030, 0x3030, "\000" 
+    0
+END
+
+IDD_ORDER_FORM DLGINIT
+BEGIN
+    IDC_LOTS, 0x403, 4, 0
+0x2e30, 0x0031, 
+    IDC_LOTS, 0x403, 4, 0
+0x2e30, 0x0032, 
+    IDC_LOTS, 0x403, 4, 0
+0x2e30, 0x0035, 
+    IDC_LOTS, 0x403, 2, 0
+0x0031, 
+    IDC_LOTS, 0x403, 2, 0
+0x0032, 
+    IDC_LOTS, 0x403, 2, 0
+0x0033, 
+    IDC_LOTS, 0x403, 2, 0
+0x0034, 
+    IDC_LOTS, 0x403, 2, 0
+0x0035, 
+    IDC_LOTS, 0x403, 2, 0
+0x0036, 
+    IDC_LOTS, 0x403, 2, 0
+0x0037, 
+    IDC_LOTS, 0x403, 2, 0
+0x0038, 
+    IDC_LOTS, 0x403, 2, 0
+0x0039, 
+    IDC_LOTS, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_LOTS, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_LOTS, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_LOTS, 0x403, 3, 0
+0x3532, "\000" 
+    IDC_COMMAND, 0x403, 10, 0
+0x7542, 0x2079, 0x694c, 0x696d, 0x0074, 
+    IDC_COMMAND, 0x403, 11, 0
+0x6553, 0x6c6c, 0x4c20, 0x6d69, 0x7469, "\000" 
+    IDC_COMMAND, 0x403, 9, 0
+0x7542, 0x2079, 0x7453, 0x706f, "\000" 
+    IDC_COMMAND, 0x403, 10, 0
+0x6553, 0x6c6c, 0x5320, 0x6f74, 0x0070, 
+    0
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_METATRADERAPIEXAMPLE2_DIALOG DIALOGEX 0, 0, 504, 271
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MetaTraderAPIExample2"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Quit",IDCANCEL,427,250,70,14
+    EDITTEXT        IDC_EDITPORT,331,20,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITLOGIN,331,33,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITPASSWD,331,47,80,12,ES_PASSWORD | ES_AUTOHSCROLL
+    RTEXT           "Server:",IDC_STATIC,293,9,33,11
+    RTEXT           "Login:",IDC_STATIC,293,35,33,11
+    RTEXT           "Port:",IDC_STATIC,292,23,33,11
+    RTEXT           "Password:",IDC_STATIC,294,48,33,11
+    EDITTEXT        IDC_EDITSERVER,331,7,80,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Connect",IDC_BTNCONNECT,417,7,80,14
+    PUSHBUTTON      "&Disconnect",IDC_BTNDISCONNECT,417,25,80,14,WS_DISABLED
+    PUSHBUTTON      "&Get Account",IDC_BTNOPENACC,417,45,80,14,WS_DISABLED
+    LISTBOX         IDC_LISTSTATUS,13,119,393,115,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | NOT WS_VISIBLE | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "&Login",IDC_BNTLOGIN,417,65,80,14,WS_DISABLED
+    COMBOBOX        IDC_COMBOSECS,190,7,80,80,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Change &Password",IDC_BNTPASSWD,417,85,80,14,
+                    WS_DISABLED
+    CONTROL         "List2",IDC_LISTMARKET,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,7,7,165,94
+    CONTROL         "Tab1",IDC_TAB,"SysTabControl32",TCS_BOTTOM,7,115,406,
+                    136
+    CONTROL         "List2",IDC_LISTMAIL,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | NOT WS_VISIBLE | WS_BORDER | WS_TABSTOP,
+                    7,105,131,47
+    CONTROL         "List3",IDC_LISTNEWS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | NOT WS_VISIBLE | WS_BORDER | WS_TABSTOP,
+                    45,106,128,59
+    CONTROL         "List3",IDC_LISTHIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | NOT WS_VISIBLE | WS_BORDER | WS_TABSTOP,
+                    78,106,128,59
+    CONTROL         "List3",IDC_LISTTRADE,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | NOT WS_VISIBLE | WS_BORDER | WS_TABSTOP,
+                    107,106,128,59
+    PUSHBUTTON      "&Add Security",IDC_BTNADDSEC,190,25,80,14,WS_DISABLED
+    PUSHBUTTON      "&Hide Security",IDC_BTNHIDESEC,190,45,80,14,WS_DISABLED
+    LTEXT           "",IDC_STATICQUOTES,220,88,50,10,0,WS_EX_STATICEDGE
+    RTEXT           "Quotes:",IDC_STATIC,190,90,28,10
+    LTEXT           "",IDC_STATICSUMMARY,7,254,406,10,0,WS_EX_STATICEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_METATRADERAPIEXAMPLE2_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 497
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 264
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MetaTraderAPIExample2 MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MetaTraderAPIExample2\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MetaTraderAPIExample2.EXE\0"
+            VALUE "ProductName", "MetaTraderAPIExample2 Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\MetaTraderAPIExample2.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
